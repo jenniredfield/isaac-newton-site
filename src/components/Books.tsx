@@ -1,4 +1,4 @@
-export default function Books(props) {
+export default function Books() {
   return (
     <div className="min-h-screen w-full py-8 bg-gray-100">
       <div className="w-8/12 mx-auto text-center">

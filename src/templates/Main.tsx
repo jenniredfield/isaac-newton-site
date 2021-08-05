@@ -15,14 +15,19 @@ const Main = (props: IMainProps) => (
       <Nav />
     </>
 
-    <div className="text-xl content">{props.children}</div>
+    <div className="content">{props.children}</div>
 
-    <div className="border-t border-gray-300 text-center py-8 text-sm">
+    <div className="border-t border-gray-300 text-center py-8 text-xs">
       © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
       <span role="img" aria-label="Love">
         ♥
       </span>{' '}
-      by <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
+      by <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>{' '}
+      Extended with
+      <span role="img" aria-label="Love">
+        ♥
+      </span>{' '}
+      by JBird.
       {/*
        * PLEASE READ THIS SECTION
        * We'll really appreciate if you could have a link to our website

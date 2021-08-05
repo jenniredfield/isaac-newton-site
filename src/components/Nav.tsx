@@ -6,7 +6,7 @@ import { slide as Menu } from 'react-burger-menu';
 const menuButtonStyle = {
   width: '32px',
   height: '3px',
-  'background-color': 'black',
+  backgroundColor: 'black',
   margin: '6px 0',
 };
 
@@ -63,21 +63,4 @@ export default function Nav() {
       </nav>
     </>
   );
-}
-
-{
-  /* <div>
-<Link href="/">Isaac Newton</Link>
-</div>
-<ul className="flex flex-col justify-evenly">
-<li>
-  <Link href="/about">About</Link>
-</li>
-<li>
-  <Link href="/books">Books</Link>
-</li>
-<li>
-  <Link href="/research">Research</Link>
-</li>
-</ul> */
 }
