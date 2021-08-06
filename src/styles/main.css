@@ -1,16 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap');
 @tailwind base;
 
-a {
-  @apply text-blue-700;
+body {
+  font-family: 'Georama', sans-serif;
 }
-
+/* @apply border-b-2 border-blue-700; */
 a:hover {
-  @apply border-b-2 border-blue-700;
+  cursor: pointer;
 }
 
 @tailwind components;
 
 @tailwind utilities;
+
+:root {
+  --circle-size: 300px;
+  --my-gray: #273036;
+}
+
+.bg-my-gray {
+  background-color: var(--my-gray)
+}
 
 .content p {
   @apply my-6;
@@ -21,10 +31,31 @@ a:hover {
 }
 
 .hero-image {
-  background-image: url('https://images.unsplash.com/photo-1445905595283-21f8ae8a33d2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80');
-  height: calc(100vh - 200px);
+  /* background-image: url('/assets/images/eberhard.jpg');
+  background-size: cover; */
+  height: calc(100vh - 100px);
   background-position: 10% 30%;
-  animation: move 10s infinite;
+  /* animation: move 10s infinite; */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/eberhard.jpg');
+
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width:100%;
+  top: 0;
+  left: 0; 
+}
+
+.hero-wrapper {
+  height: calc(100vh - 100px);
+}
+
+footer {
+  background-image: url('/assets/images/lubo-minar.jpg');
+  background-size: cover;
 }
 
 @keyframes move {
@@ -37,4 +68,54 @@ a:hover {
   100% {
     background-position: 10% 30%;
   }
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation: fadeInUp 800ms linear forwards;
+  -webkit-animation-name: fadeInUp;
+}
+
+.wave-hero {
+  position: absolute;
+  bottom: 95px;
+}
+
+@media only screen and (mix-width: 768px)  {
+  .wave-hero {
+    bottom: 80px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+
+/**ABOUT**/
+
+.circle {
+  width: var(--circle-size) !important;
+  height: var(--circle-size)!important;
+  border-radius: 100%;
+}
+
+.circle::after {
+  content: '';
+  width: var(--circle-size);
+  height: var(--circle-size);
+  background-image: url('https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTY2MzU3Njc4ODI0NjI5OTM0/isaac_newton_1689_painting_sir_godfrey_kneller_public_domain_via_wikimedia_commons.jpg');
+  background-size: 100%;
+  display: block;
+  border-radius: 100%;
+  position: relative;
+  top: 20px;
+  box-shadow: 0px 6px #e3e3e3;
 }

@@ -1,7 +1,7 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
+import Footer from '../components/Footer';
 import Nav from '../components/Nav';
-import { AppConfig } from '../utils/AppConfig';
 
 type IMainProps = {
   meta: ReactNode;
@@ -17,7 +17,9 @@ const Main = (props: IMainProps) => (
 
     <div className="content">{props.children}</div>
 
-    <div className="border-t border-gray-300 text-center py-8 text-xs">
+    <Footer />
+
+    {/* <div className="border-t border-gray-300 text-center py-2 text-xs">
       © Copyright {new Date().getFullYear()} {AppConfig.title}. Powered with{' '}
       <span role="img" aria-label="Love">
         ♥
@@ -27,14 +29,14 @@ const Main = (props: IMainProps) => (
       <span role="img" aria-label="Love">
         ♥
       </span>{' '}
-      by JBird.
-      {/*
-       * PLEASE READ THIS SECTION
-       * We'll really appreciate if you could have a link to our website
-       * The link doesn't need to appear on every pages, one link on one page is enough.
-       * Thank you for your support it'll mean a lot for us.
-       */}
-    </div>
+      by JBird. */}
+    {/*
+     * PLEASE READ THIS SECTION
+     * We'll really appreciate if you could have a link to our website
+     * The link doesn't need to appear on every pages, one link on one page is enough.
+     * Thank you for your support it'll mean a lot for us.
+     */}
+    {/* </div> */}
   </div>
 );
 
