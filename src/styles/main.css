@@ -90,7 +90,7 @@ footer {
 
 @media only screen and (mix-width: 768px)  {
   .wave-hero {
-    bottom: 80px;
+    bottom: 0px;
   }
 }
 
