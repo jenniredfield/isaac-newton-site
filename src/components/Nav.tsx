@@ -67,12 +67,12 @@ const styles = {
   },
 };
 
-const navPosition = {
-  position: 'absolute',
-  zIndex: '20000',
-  width: '100%',
-  color: 'white !important',
-};
+// const navPosition = {
+//   position: 'absolute',
+//   zIndex: '20000',
+//   width: '100%',
+//   color: 'white !important',
+// };
 
 export default function Nav() {
   const [isDesktop, setIsDesktop] = useState(true);
@@ -122,8 +122,9 @@ export default function Nav() {
   return (
     <>
       <nav
-        className={`max-w-full h-20 text-2xl ${!isHome ? 'shadow' : ''}`}
-        style={navPosition}
+        className={`nav-class max-w-full h-20 text-2xl ${
+          !isHome ? 'shadow' : ''
+        }`}
       >
         <div
           className={`container mx-auto flex justify-between md:justify-evenly items-center h-full px-3 ${
@@ -133,7 +134,6 @@ export default function Nav() {
           {!isDesktop ? (
             <>
               <Menu
-                left
                 customBurgerIcon={menuButton}
                 menuClassName="py-5"
                 className="burger-menu-outer"

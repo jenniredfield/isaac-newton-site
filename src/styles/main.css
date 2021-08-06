@@ -30,6 +30,13 @@ a:hover {
   @apply my-6;
 }
 
+.nav-class {
+  position: absolute;
+  z-index: 20000;
+  width: 100%;
+  color: white !important;
+}
+
 .hero-image {
   /* background-image: url('/assets/images/eberhard.jpg');
   background-size: cover; */
