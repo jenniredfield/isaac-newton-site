@@ -67,13 +67,6 @@ const styles = {
   },
 };
 
-// const navPosition = {
-//   position: 'absolute',
-//   zIndex: '20000',
-//   width: '100%',
-//   color: 'white !important',
-// };
-
 export default function Nav() {
   const [isDesktop, setIsDesktop] = useState(true);
 
@@ -86,9 +79,7 @@ export default function Nav() {
   }, []);
 
   const router = useRouter();
-  console.log('🚀 ~ file: Nav.tsx ~ line 89 ~ Nav ~ router', router);
   const isHome = router.pathname === '/';
-  console.log('🚀 ~ file: Nav.tsx ~ line 91 ~ Nav ~ isHome', isHome);
 
   const logo = (
     <div className="flex items-center justify-center">

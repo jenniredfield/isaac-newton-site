@@ -3,7 +3,7 @@
   "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": [
-      "error",
+      1,
       {
         "singleQuote": true
       }
@@ -25,7 +25,7 @@
       },
       "rules": {
         "prettier/prettier": [
-          "error",
+          1,
           {
             "singleQuote": true
           }
