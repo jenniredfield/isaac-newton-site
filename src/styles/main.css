@@ -41,20 +41,24 @@ a:hover {
   /* background-image: url('/assets/images/eberhard.jpg');
   background-size: cover; */
   height: calc(100vh - 100px);
-  background-position: 10% 30%;
+  /* background-position: 10% 30%; */
   /* animation: move 10s infinite; */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/eberhard.jpg');
-
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/eberhard.jpg'); */
+  background-color: #273036;
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: center;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   position: absolute;
   width:100%;
   top: 0;
   left: 0; 
+  object-fit: cover;
+  filter: brightness(50%);
 }
+
+
 
 .hero-wrapper {
   height: calc(100vh - 100px);
@@ -88,9 +92,9 @@ footer {
   bottom: 0px;
 }
 
-@media only screen and (mix-width: 768px)  {
+@media only screen and (min-width: 768px)  {
   .wave-hero {
-    bottom: 0px;
+    bottom: -20px;
   }
 }
 

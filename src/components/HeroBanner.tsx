@@ -1,7 +1,12 @@
 export default function Herobanner() {
   return (
     <div className="hero-wrapper relative">
-      <div className="hero-image" />
+      <picture>
+        <source srcSet="https://res.cloudinary.com/jenniredfield/image/upload/h_1600,w_2400/v1628336364/Isaac%20Newton/eberhard.jpg"
+            media="(min-width: 800px)"/>
+            <source srcSet="https://res.cloudinary.com/jenniredfield/image/upload/h_600,w_800/v1628336364/Isaac%20Newton/eberhard.jpg"></source>
+            <img  className="hero-image" src="https://res.cloudinary.com/jenniredfield/image/upload/v1628336364/Isaac%20Newton/eberhard.jpg" />
+      </picture>
       <div className="hero-content w-full h-full mx-auto flex items-center justify-center flex-col px-10 text-center text-gray-300">
         <h1 className="text-4xl fadeInUp">Isaac Newton</h1>
         <h2 className="text-4xl fadeInUp">Science Author</h2>
