@@ -119,7 +119,7 @@ export default function Nav() {
       >
         <div
           className={`container mx-auto flex justify-between md:justify-evenly items-center h-full px-3 ${
-            isHome ? 'text-gray-300' : 'text-gray-800'
+            isHome ? 'primary-light-text' : 'primary-dark-text'
           }`}
         >
           {!isDesktop ? (

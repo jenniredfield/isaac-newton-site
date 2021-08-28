@@ -13,7 +13,7 @@ export default function Herobanner() {
           alt="hero banner"
         />
       </picture>
-      <div className="hero-content w-full h-full mx-auto flex items-center justify-center flex-col px-10 text-center text-gray-300">
+      <div className="hero-content w-full h-full mx-auto flex items-center justify-center flex-col px-10 text-center primary-light-text">
         <h1 className="text-4xl fadeInUp">Isaac Newton</h1>
         <h2 className="text-4xl fadeInUp">Science Author</h2>
         <p className="text-4xl fadeInUp"> Theory Bla Bla Author</p>

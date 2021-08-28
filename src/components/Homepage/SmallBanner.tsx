@@ -1,7 +1,7 @@
 export default function Smallbanner() {
   return (
-    <div className="w-full py-8 bg-my-gray md:h-96 text-gray-300 flex items-center ">
-      <div className="w-8/12 mx-auto text-center">
+    <div className="w-full py-8 bg-my-gray md:h-96 primary-light-text flex items-center ">
+      <div className="my-constraint text-center p-8">
         <h2>
           Experimental Physicits interested in all aspects physics, art etc.
         </h2>

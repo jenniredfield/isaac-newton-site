@@ -1,6 +1,6 @@
-import Books from '../components/Books';
-import Herobanner from '../components/HeroBanner';
-import Smallbanner from '../components/SmallBanner';
+import Books from '../components/Homepage/Books';
+import Herobanner from '../components/Homepage/HeroBanner';
+import Smallbanner from '../components/Homepage/SmallBanner';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 

@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="min-h-5 h-80 bg-indigo-900 text-gray-50">
-      <div className="flex flex-col justify-evenly space-y-8 h-full w-4/5 mx-auto py-10 text-center">
+    <footer className="min-h-5 h-80 bg-my-gray primary-light-text">
+      <div className="flex flex-col justify-evenly space-y-8 h-full w-4/5 mx-auto py-10 text-center max-w-screen-md">
         <h2>Isaac Newton</h2>
         <p>
           Johnstone Family Professor in the Department of Psychology at Harvard
