@@ -6,7 +6,7 @@ export default function Herobanner() {
           srcSet="https://res.cloudinary.com/jenniredfield/image/upload/h_1600,w_2400/v1628336364/Isaac%20Newton/eberhard.jpg"
           media="(min-width: 800px)"
         />
-        <source srcSet="https://res.cloudinary.com/jenniredfield/image/upload/h_600,w_800/v1628336364/Isaac%20Newton/eberhard.jpg"/>
+        <source srcSet="https://res.cloudinary.com/jenniredfield/image/upload/h_600,w_800/v1628336364/Isaac%20Newton/eberhard.jpg" />
         <img
           className="hero-image"
           src="https://res.cloudinary.com/jenniredfield/image/upload/v1628336364/Isaac%20Newton/eberhard.jpg"

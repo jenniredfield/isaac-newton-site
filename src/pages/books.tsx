@@ -35,7 +35,14 @@ const Books = () => (
       <h1 className="m-10 text-center">Books</h1>
       <div className="flex flex-col">
         {books.map((b) => (
-          <BookCard {...b} />
+          <BookCard
+            title={b.title}
+            year={b.year}
+            description={b.description}
+            imgUrl={b.imgUrl}
+            whereToGet={b.whereToGet}
+            key={b.title}
+          />
         ))}
       </div>
     </div>
