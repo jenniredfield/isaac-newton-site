@@ -22,12 +22,12 @@ a:hover {
   background-color: var(--my-gray)
 }
 
-h1 {
-  @apply text-4xl;
+.bg-light-gray {
+  background-color: #F2F2F2;
 }
 
-.content p {
-  @apply my-6;
+h1 {
+  @apply text-4xl;
 }
 
 .content ul {
@@ -91,6 +91,12 @@ h1 {
 .wave-hero {
   position: absolute;
   bottom: -1px;
+}
+
+.homepage-books__background {
+  border-top: 1px solid var(--my-gray);
+  background: rgb(39,48,54);
+  background: linear-gradient(180deg, rgba(39,48,54,1) 0%, rgba(246,242,242,1) 100%);
 }
 
 @media only screen and (min-width: 768px)  {

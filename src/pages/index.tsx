@@ -1,5 +1,8 @@
+import React from 'react';
+
 import Books from '../components/Homepage/Books';
 import Herobanner from '../components/Homepage/HeroBanner';
+import Media from '../components/Homepage/Media';
 import Smallbanner from '../components/Homepage/SmallBanner';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
@@ -21,6 +24,8 @@ const Index = () => {
       <Smallbanner />
 
       <Books />
+
+      <Media />
     </Main>
   );
 };
