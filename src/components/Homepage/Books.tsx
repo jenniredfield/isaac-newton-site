@@ -18,7 +18,7 @@ const booksSection = [
 export default function Books() {
   return (
     <div className="min-h-screen w-full py-8 homepage-books__background relative -top-1">
-      <div className="w-5/6 mx-auto text-center">
+      <div className="w-5/6 my-constraint text-center">
         <h1 className="text-4xl py-8 primary-light-text">Books</h1>
         <div className="books-wrapper">
           {booksSection.map((item, i) => {

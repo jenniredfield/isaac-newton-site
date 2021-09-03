@@ -14,9 +14,8 @@ export default function Herobanner() {
         />
       </picture>
       <div className="hero-content w-full h-full mx-auto flex items-center justify-center flex-col px-10 text-center primary-light-text">
-        <h1 className="text-4xl fadeInUp">Isaac Newton</h1>
-        <h2 className="text-4xl fadeInUp">Science Author</h2>
-        <p className="text-4xl fadeInUp"> Theory Bla Bla Author</p>
+        <h1 className="fadeInUp">Isaac Newton</h1>
+        <h2 className="text-4xl fadeInUp">Theoretical Physicist</h2>
       </div>
       <svg
         className="wave-hero"

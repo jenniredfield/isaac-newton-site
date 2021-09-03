@@ -14,7 +14,7 @@ export default function BookItem({
   invertOrder,
 }: Props) {
   return (
-    <div className="w-full mx-auto flex flex-col md:flex-row md:w-5/6 justify-evenly mb-24 shadow md:relative md:h-96rounded-2xl md:rounded-3xl max-w-screen-sm bg-light-gray">
+    <div className="w-full mx-auto flex flex-col md:flex-row md:w-5/6 justify-evenly mb-24 shadow md:relative md:h-96 rounded-2xl md:rounded-3xl max-w-screen-md bg-light-gray">
       <div className="md:relative md:w-3/6">
         <img
           src={imgUrl}
@@ -24,7 +24,7 @@ export default function BookItem({
           alt="isaac book"
         />
       </div>
-      <div className="book-description flex flex-col align-center self-center p-8 md:w-3/6">
+      <div className="book-description flex flex-col align-center self-center p-8 md:w-3/6 md:pl-0 md:pr-14">
         <p className="m-0 mb-5 text-xl">{title}</p>
         <p className="text-base mb-5">{description}</p>
         <div className="text-xl">

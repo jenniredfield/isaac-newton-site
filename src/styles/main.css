@@ -27,7 +27,7 @@ a:hover {
 }
 
 h1 {
-  @apply text-4xl;
+  @apply text-4xl md:text-6xl;
 }
 
 .content ul {
